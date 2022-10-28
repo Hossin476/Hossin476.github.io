@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: cool;
+    src: url(./coolvetica\ rg.ttf);
+}
+
+body {
+    display: grid;
+    place-items: center
+}
+
+form {
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 7px;
+    height: 600px;
+    box-shadow: 2px 4px 15px 7px #E0E0E0;
+}
+
+form input {
+    display: block;
+    height: 3rem;
+    padding-left: 5px;
+    margin-left: 50px;
+    outline: none;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    width: 400px;
+    background: none;
+}
+
+input::placeholder {
+    font-family: cool;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+input:not(:nth-child(1)) {
+    margin-top: 40px
+}
+
+.email,
+.pass,
+.confirm {
+    position: absolute;
+    margin-top: 0.75rem;
+    margin-left: 50px;
+    font-size: 1rem;
+    font-family: cool;
+}
+
+.name {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: cool;
+}
+
+p {
+    font-family: cool;
+    position: absolute;
+    letter-spacing: 1.4px;
+    margin-left: 50px;
+    width: 430px;
+    word-wrap: break-word;
+    font-size: 1rem;
+    margin-top: 0.75rem
+}
+
+p a,
+h4 a {
+    color: #4D13D1;
+    text-decoration: 2px solid underline #4D13D1;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    font-family: cool;
+    font-size: 1rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    padding: 0.88rem 2.19rem;
+    background: #f5ce1f;
+    border-radius: 5px;
+    border: none
+}
+
+h4 {
+    font-family: cool;
+    margin-left: 8rem;
+    width: 18.75rem;
+    letter-spacing: 1.5px;
+    font-size: 0.95rem;
+    margin-top: 1.5rem
+}

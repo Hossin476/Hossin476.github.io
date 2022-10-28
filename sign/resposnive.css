@@ -1,0 +1,67 @@
+@media screen and (max-width:500px) {
+    main {
+        display: none
+    }
+    header {
+        padding: 0 1.2rem;
+    }
+    h1 {
+        padding-left: 4.5rem
+    }
+    h4 {
+        margin-left: 3.5rem;
+    }
+    h3 {
+        margin-top: 1rem;
+        width: 21.9rem;
+        font-family: cool;
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+    }
+    p {
+        width: 21rem;
+    }
+    form input {
+        width: 20rem
+    }
+    .eye,
+    .disable,
+    .eye1,
+    .disable1 {
+        margin-left: 18rem
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:1025px) {
+    main {
+        display: none
+    }
+    header {
+        padding: 0 1.2rem
+    }
+    h1 {
+        padding-left: 4.5rem
+    }
+    h4 {
+        margin-left: 3.5rem;
+    }
+    h3 {
+        margin-top: 1rem;
+        width: 21.9rem;
+        font-family: cool;
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+    }
+    p {
+        width: 21.5rem
+    }
+    form input {
+        width: 10rem
+    }
+    .eye,
+    .disable,
+    .eye1,
+    .disable1 {
+        margin-left: 18rem
+    }
+}

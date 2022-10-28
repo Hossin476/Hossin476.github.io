@@ -1,0 +1,74 @@
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: cool;
+    src: url(./coolvetica\ rg.ttf)
+}
+
+form {
+    width: 500px;
+    height: 600px;
+    box-shadow: 2px 4px 15px 7px #E0E0E0;
+    border-radius: 7px;
+}
+
+form .input-container {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+form input {
+    height: 3.5rem;
+    padding-left: 5px;
+    outline: none;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 400px;
+    background: none;
+    font-family: cool;
+    font-size: 1rem;
+}
+
+.submit {
+    cursor: pointer;
+    outline: none;
+    font-family: cool;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 50px;
+    width: 400px;
+    height: 3.5rem;
+    background: #f5ce1f;
+    border-radius: 5px;
+    border: none;
+}
+
+h2 {
+    text-align: center;
+    font-family: cool
+}
+
+h4 {
+    text-align: center;
+    font-family: cool;
+    font-size: 1.05rem;
+}
+
+h5 {
+    font-family: cool;
+    font-size: 1.05rem;
+    text-align: center
+}

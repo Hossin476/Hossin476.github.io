@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+
+<body>
+    <form action="/user" method="post">
+        <span class="name">Your Name</span>
+        <input type="text" placeholder="John Smith" name="userName" required>
+        <span class="email">E-mail</span>
+        <input type="email" placeholder="John@example.com" name="Email" required>
+        <span class="pass">Password</span>
+        <input class="password" type="password" placeholder="At least 8 characters" name="Password" required onkeyup="Length()">
+        <span class="confirm">Confirm Password</span>
+        <input class="con" type="password" placeholder="Confirm password" name="passConfirm" required onkeyup="confirmation()">
+        <p>By creating an account on Einsteiner, you agree to our <a href="#">Terms & conditions</a></p>
+        <button class="btn" type="submit">Create Account</button>
+        <h4>Already have an account? <a href="/login" class="login">Log In</a></h4>
+        <strong>Or go back to the Home page <a href="/Home">Einsteiner</a></strong>
+    </form>
+    <script src="../public/error.js"></script>
+    <!-- <script src="../request.js"></script> -->
+</body>
+
+</html>
