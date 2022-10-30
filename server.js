@@ -3,15 +3,23 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const compression = require('compression');
+const helmet = require('helmet');
 const MongoStore = require('connect-mongo');
 const { errorHandle } = require('./errorHandler');
-app.use(errorHandle);
+const morgan = require("morgan");
+const https = require("https");
+const fs = require("fs");
 require('dotenv').config();
 app.set("view engine", "ejs");
 const cors = require('cors');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
+app.use(compression());
+app.use(helmet());
+app.use(errorHandle);
+app.use(morgan("common"));
 // app.use(locale);
 app.use('/public', express.static(process.cwd() + '/public'));
 const { GetSign, GetLogIn,logout, login, resetPassword, dashboard, Home, Create, Delete, findAll, findById, findAndUpdate } = require('./controllers/controller');
@@ -36,6 +44,12 @@ const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 };
+// const credentials = {
+//     key: fs.readFileSync("my-api.key", "utf8"),
+//     cert: fs.readFileSync("my-api.cert", "utf8")
+// };
+// https
+//     .createServer(credentials, app);
 mongoose.connect(uri, options).then(() => {
     const db = mongoose.connection;
     db.once('open', () => { console.log('successfully connected to the database') });
